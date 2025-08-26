@@ -33,7 +33,10 @@ The goal is to provide an AI-powered system that can assist insurance companies,
 
 🖼 Example Prediction
 
-Below is a screenshot of the Streamlit app classifying a vehicle image as Rear Crushed:
+Below is a screenshot of the Streamlit app classifying a vehicle image as **Rear Crushed**:
+
+![Demo Screenshot](images/demo.png)
+
 
 
 ⚙️ Installation
@@ -66,15 +69,23 @@ streamlit run app.py
 
 Upload a car image, and the model will predict the damage type.
 
-📂 Folder Structure
-Vehicle-Damage-Detection/
-├── damage_predication.ipynb     # Training & evaluation notebook
-├── saved_model.pth              # Pre-trained ResNet model
-├── streamlit-app/               # Streamlit web app
-│   └── app.py
-├── images/                      # Demo photos 
-│   └── demo.png
-└── requirements.txt             # Dependencies
+## 📂 Project Structure
+📂 Vehicle-Damage-Detection/
+│
+├── damage_predication.ipynb # Jupyter notebook for training & evaluation
+├── saved_model.pth # Pre-trained ResNet model (weights)
+├── requirements.txt # Project dependencies
+│
+├── streamlit-app/ # Streamlit web application
+│ ├── app.py # Main Streamlit app
+│ ├── model_helper.py # Model loading & prediction utilities
+│ └── utils/ # (Optional) helper functions
+│
+├── images/ # Demo/test images
+│ └── demo.png
+│
+└── README.md # Project documentation
+
 
 
 📊 Results
